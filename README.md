@@ -64,7 +64,6 @@ This project using 3 Docker containers:
 │   ├── requirements.txt
 │   ├── voivodeship.shp
 │   └── voivodeship.shx
-├── requirements.txt
 └── .env-sample
 ```
 ## 🔑 Setup your local variables
