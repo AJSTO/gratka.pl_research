@@ -92,7 +92,7 @@ Change direction to create dockerfile of scrapy:
 ```
 Build scrapy image: 🚨to run this command docker should be running on your machine🚨
 ```bash
-  $ docker build -t scrapy_test .     
+  $ docker build -t scrapy_gratka .     
 ```
 Change direction to main directory:
 ```bash
@@ -104,7 +104,7 @@ Change direction to create dockerfile of notebook:
 ```
 Build notebook image:
 ```bash
-  $ docker build -t notebook_test .     
+  $ docker build -t notebook_gratka .     
 ```
 Change direction to run docker composer:
 ```bash
