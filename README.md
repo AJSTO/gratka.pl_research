@@ -89,7 +89,7 @@ Change direction to create dockerfile of scrapy:
 ```
 Build scrapy image: 🚨to run this command docker should be running on your machine🚨
 ```bash
-  $ % docker build -t scrapy_test .     
+  $ docker build -t scrapy_test .     
 ```
 Change direction to main directory:
 ```bash
