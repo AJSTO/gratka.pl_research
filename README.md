@@ -14,7 +14,7 @@ This data when spider will end his job will be stored inside the PostgreSQL.
 Next step will be data cleansing and visualistaion, which is made with jupyter notebook.
 
 This project using 3 Docker containers:
-- **Container with Python and scrapy**
+- **Container with Python and Scrapy**
     - Created gratka spider which inheriting from class scrapy.Spider (Scrapy script created to crawl metadata from every car selling advertisment and
     also saving a HTML file for each ad - in folder)
 - **Container with PosgreSQL**
