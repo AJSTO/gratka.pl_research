@@ -1,0 +1,37 @@
+version: "3"
+services:
+    postgres-db:
+        image: postgres:11.18-alpine
+        volumes:
+            - ./Database/create_table.sql:/docker-entrypoint-initdb.d/create_table.sql
+        environment:
+            - POSTGRES_PASSWORD=${DATABASE_PASSWORD}
+            - POSTGRES_DB=${POSTGRES_DB}
+        ports:
+            - 5432:5432
+    scraper:
+        image: scrapy_test
+        volumes:
+            - ./gratkascrap:/gratkascrap
+        working_dir: /gratkascrap
+        command: bash -c "scrapy crawl gratka"
+        environment:
+            - PASSWORD=${DATABASE_PASSWORD}
+            - POSTGRES_DB=${POSTGRES_DB}
+        network_mode: "host"
+        depends_on:
+            - postgres-db
+        restart: on-failure
+    jupyter:
+        image: notebook_test
+        command: bash -c "jupyter lab --ServerApp.token=gratka"
+        environment:
+            - NB_USER=docker_worker
+            - JUPYTER_TOKEN=gratka
+            - PASSWORD=${DATABASE_PASSWORD}
+            - POSTGRES_DB=${POSTGRES_DB}
+        volumes:
+            - ./notebook:/home/jovyan/notebook
+        working_dir: /home/jovyan/notebook
+        ports:
+            - 8888:8888
