@@ -101,7 +101,7 @@ Change direction to create dockerfile of notebook:
 ```
 Build notebook image:
 ```bash
-  $ % docker build -t notebook_test .     
+  $ docker build -t notebook_test .     
 ```
 Change direction to run docker composer:
 ```bash
