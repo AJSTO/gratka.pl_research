@@ -11,7 +11,7 @@ This project is created for crawling metadata from auction service with 🚗cars
 'liczba_drzwi', 'liczba_miejsc', 'numer_vin', 'ważny_przegląd', 'link'
 ```
 This data when spider will end his job will be stored inside the PostgreSQL.
-Next step will be data cleansing and visualistaion, which is made with jupyter notebook.
+Next step will be data cleansing and visualistaion, which are made with jupyter notebook.
 
 This project using 3 Docker containers:
 - **Container with Python and Scrapy**
