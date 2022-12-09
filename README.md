@@ -1,3 +1,6 @@
+## 👨‍💻 Built with
+<img src="https://img.shields.io/badge/Python-FFD43B?style=for-the-badge&logo=python&logoColor=blue" /> <img src="https://img.shields.io/badge/Docker-2CA5E0?style=for-the-badge&logo=docker&logoColor=white"/> <img src="https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white" /> <img src="https://img.shields.io/badge/Jupyter-F37626.svg?&style=for-the-badge&logo=Jupyter&logoColor=white" /> <img src="https://img.shields.io/badge/Pandas-2C2D72?style=for-the-badge&logo=pandas&logoColor=white" /> <img src="https://img.shields.io/badge/Numpy-777BB4?style=for-the-badge&logo=numpy&logoColor=white" />
+
 ##  Descripction about project
 
 This project is created for crawling metadata from auction service with 🚗cars: [Gratka.pl](https://gratka.pl/motoryzacja/osobowe). Metadata like a:
@@ -120,3 +123,4 @@ Run dockercomposer:
 🚨In case the notebook requires a token pass a value which was assigned to JUPYER_TOKEN in .env🚨
 
 Next choose a file 🗒️data_visualisation.ipynb and run all cells to see data analyse.
+
