@@ -69,7 +69,7 @@ This project using 3 Docker containers:
 ## 🔑 Setup your local variables
 To run properly this project you should assign a environmental variables in file .env.
 
-In this repo is created .env-sample with variables used to run containers. You need to assign variables above in your .env file:
+In this repo is created .env-sample with variables used to run containers. You need to assign variables below in your .env file:
 ```bash
 DATABASE_PASSWORD=
 JUPYER_TOKEN=
