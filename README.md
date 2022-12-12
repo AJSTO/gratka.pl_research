@@ -84,7 +84,7 @@ Type in CLI:
 ```
 You should see this:
 ```bash
-Database    docker-compose.yml	gratkascrap     notebook	requirements.txt
+Database    docker-compose.yml	gratkascrap     notebook
 ```
 Change direction to create dockerfile of scrapy:
 ```bash
