@@ -41,16 +41,12 @@ This project using 3 Docker containers:
 │   ├── __init__.py
 │   ├── gratkascrap
 │   │   ├── __init__.py
-│   │   ├── __pycache__
-│   │   │   ├── __init__.cpython-39.pyc
-│   │   │   └── settings.cpython-39.pyc
 │   │   ├── items.py
 │   │   ├── middlewares.py
 │   │   ├── pipelines.py
 │   │   ├── settings.py
 │   │   └── spiders
 │   │       ├── __init__.py
-│   │       ├── __pycache__
 │   │       │   ├── __init__.cpython-39.pyc
 │   │       │   └── gratka.cpython-39.pyc
 │   │       └── gratka.py
@@ -58,8 +54,6 @@ This project using 3 Docker containers:
 │   └── scrapy.cfg
 ├── notebook
 │   ├── Dockerfile
-│   ├── __pycache__
-│   │   └── dash.cpython-310.pyc
 │   ├── data_visualisation.ipynb
 │   ├── requirements.txt
 │   ├── voivodeship.shp
